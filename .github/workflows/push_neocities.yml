@@ -1,0 +1,15 @@
+name: Deploy to Neocities
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: bcomnes/deploy-to-neocities@v1
+        with:
+          api_key: ${{ secrets.NEOCITIES_KEY }}
+          cleanup: true
