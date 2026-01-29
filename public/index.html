@@ -10,7 +10,41 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <audio src="https://github.com/eepydevlukas/Awesome-Site/music/radio.mp3" autoplay loop></audio>
+    <audio
+        autoplay
+        muted
+        loop
+        preload="auto"
+        id="bgm"
+    >
+        <source src="https://github.com/eepydevlukas/Awesome-Site/raw/refs/heads/main/music/radio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="epilepsy-warning" style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 9999;
+        ">
+        <h1>⚠️ Epilepsy Warning ⚠️</h1>
+        <p>This site contains flashing visuals and audio. Click "Continue" to proceed.</p>
+        <button id="continueBtn" style="
+            padding: 1em 2em;
+            font-size: 1.2em;
+            margin-top: 1em;
+            cursor: pointer;
+        ">Continue</button>
+    </div>
     <h1>This is a webssite.</h1>
+    
+    <script src="script.js"></script>
 </body>
 </html>
