@@ -1,8 +1,8 @@
 body {
-    background-image: url("resources/imgs/bg.jpg");
+    background-image: url("resources/imgs/dancing_cat.gif");
     font-family: "Rock Salt";
     text-align: center;
-    background-size: 474px 266px;
+    background-size: 300px 300px;
     animation: scrollBg 1s linear infinite;
 }
 
@@ -14,7 +14,7 @@ body {
 
 @keyframes scrollBg {
   from { background-position-x: 0; }
-  to   { background-position-x: -474px; } /* moves exactly one full tile */
+  to   { background-position-x: -300px; } /* moves exactly one full tile */
   from { background-position-y: 0;}
-  to { background-position-y: 266px;}
+  to { background-position-y: 300px;}
 }
