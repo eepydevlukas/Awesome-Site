@@ -4,6 +4,12 @@ body {
     text-align: center;
     background-size: 300px 300px;
     animation: scrollBg 1s linear infinite;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .rock-salt-regular {
@@ -17,4 +23,23 @@ body {
   to   { background-position-x: -300px; } /* moves exactly one full tile */
   from { background-position-y: 0;}
   to { background-position-y: 300px;}
+}
+
+#box {
+  background-color: #007474;
+  width: 500px;
+  margin-top: 50px;
+  border: 10px solid blueviolet;
+}
+
+h1 {
+  color: #ff007f;
+}
+
+#foreskin {
+  color: #007474;
+}
+
+#foreskin:hover {
+  color:black; 
 }
